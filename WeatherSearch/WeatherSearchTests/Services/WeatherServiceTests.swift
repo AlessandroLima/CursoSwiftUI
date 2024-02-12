@@ -10,28 +10,67 @@ import XCTest
 @testable import WeatherSearch
 
 final class WeatherServiceTests: XCTestCase {
-
+    
     func testGetWeather() {
-            let jsonString = "{\"main\":{\"temp\": 25,\"feels_like\": 25,\"temp_min\": 24,\"temp_max\": 25,\"pressure\": 1021,\"humidity\": 67}}"
-            let mockSession = MockURLSession()
-            let weatherData = jsonString.data(using: .utf8)!
-            mockSession.data = weatherData
-            let service = WeatherService()
-
-            var expectedResult: Weather?
+        let jsonString = "{\"main\":{\"temp\": 25,\"feels_like\": 25,\"temp_min\": 24,\"temp_max\": 25,\"pressure\": 1021,\"humidity\": 67}}"
+        let mockSession = MockURLSession()
+        let weatherData = jsonString.data(using: .utf8)!
+        mockSession.data = weatherData
+        let service = WeatherService()
         
-            let expectedWeather: Weather = Weather(temp: 25,
-                                          feels_like:    25,
-                                          temp_min:      24,
-                                          temp_max:      25,
-                                          pressure:      1021,
-                                          humidity:      67)
-            
-            service.getWeather(by: "London", session: mockSession) { weather in
-                expectedResult = weather
-            }
-
-            XCTAssertEqual(expectedResult, expectedWeather)
+        var expectedResult: Weather?
+        
+        let expectedWeather: Weather = Weather(temp: 25,
+                                               feels_like:    25,
+                                               temp_min:      24,
+                                               temp_max:      25,
+                                               pressure:      1021,
+                                               humidity:      67)
+        
+        service.getWeather(by: "London", session: mockSession) { weather in
+            expectedResult = weather
         }
-
+        
+        XCTAssertEqual(expectedResult, expectedWeather)
+    }
+    
+    func testGetWeatherFail() {
+        let jsonString = "{\"main\":{\"temp\": 0,\"feels_like\": 25,\"temp_min\": 24,\"temp_max\": 25,\"pressure\": 1021,\"humidity\": 67}}"
+        let mockSession = MockURLSession()
+        let weatherData = jsonString.data(using: .utf8)!
+        mockSession.data = weatherData
+        let service = WeatherService()
+        
+        var expectedResult: Weather?
+        
+        let expectedWeather: Weather = Weather(temp: 25,
+                                               feels_like:    25,
+                                               temp_min:      24,
+                                               temp_max:      25,
+                                               pressure:      1021,
+                                               humidity:      67)
+        
+        service.getWeather(by: "London", session: mockSession) { weather in
+            expectedResult = weather
+        }
+        
+        XCTAssertNotEqual(expectedResult, expectedWeather)
+    }
+    
+    func testGetWeatherIfJsonIsInvalid() {
+        let jsonString = "{}"
+        let mockSession = MockURLSession()
+        let weatherData = jsonString.data(using: .utf8)!
+        mockSession.data = weatherData
+        let service = WeatherService()
+        
+        var expectedResult: Weather?
+        
+        service.getWeather(by: "London", session: mockSession) { weather in
+            expectedResult = weather
+        }
+        
+        XCTAssertNil(expectedResult)
+    }
+    
 }
