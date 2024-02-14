@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D26992D22B7D5AAE004F3FFC /* GeocodingClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = D26992D12B7D5AAE004F3FFC /* GeocodingClient.swift */; };
+		D26992D32B7D5AAE004F3FFC /* GeocodingClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = D26992D12B7D5AAE004F3FFC /* GeocodingClient.swift */; };
+		D26992D62B7D5ACC004F3FFC /* APIEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = D26992D42B7D5ACC004F3FFC /* APIEndPoint.swift */; };
+		D26992D72B7D5ACC004F3FFC /* APIEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = D26992D42B7D5ACC004F3FFC /* APIEndPoint.swift */; };
+		D26992D82B7D5ACC004F3FFC /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D26992D52B7D5ACC004F3FFC /* Constants.swift */; };
+		D26992D92B7D5ACC004F3FFC /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D26992D52B7D5ACC004F3FFC /* Constants.swift */; };
 		D26A00462B7BAF8E00AAF9E4 /* WeatherSearchNewApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D26A00452B7BAF8E00AAF9E4 /* WeatherSearchNewApp.swift */; };
 		D26A00482B7BAF8E00AAF9E4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D26A00472B7BAF8E00AAF9E4 /* ContentView.swift */; };
 		D26A004A2B7BAF9A00AAF9E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D26A00492B7BAF9A00AAF9E4 /* Assets.xcassets */; };
@@ -40,6 +46,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D26992D12B7D5AAE004F3FFC /* GeocodingClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeocodingClient.swift; sourceTree = "<group>"; };
+		D26992D42B7D5ACC004F3FFC /* APIEndPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIEndPoint.swift; sourceTree = "<group>"; };
+		D26992D52B7D5ACC004F3FFC /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		D26A00422B7BAF8E00AAF9E4 /* WeatherSearchNew.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeatherSearchNew.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D26A00452B7BAF8E00AAF9E4 /* WeatherSearchNewApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherSearchNewApp.swift; sourceTree = "<group>"; };
 		D26A00472B7BAF8E00AAF9E4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -104,6 +113,9 @@
 		D26A00442B7BAF8E00AAF9E4 /* WeatherSearchNew */ = {
 			isa = PBXGroup;
 			children = (
+				D26992D42B7D5ACC004F3FFC /* APIEndPoint.swift */,
+				D26992D52B7D5ACC004F3FFC /* Constants.swift */,
+				D26992D12B7D5AAE004F3FFC /* GeocodingClient.swift */,
 				D26A007A2B7BB6C000AAF9E4 /* Environment */,
 				D26A00702B7BB3F000AAF9E4 /* Models */,
 				D26A00452B7BAF8E00AAF9E4 /* WeatherSearchNewApp.swift */,
@@ -289,9 +301,12 @@
 			files = (
 				D26A00752B7BB62A00AAF9E4 /* Weather.swift in Sources */,
 				D26A00482B7BAF8E00AAF9E4 /* ContentView.swift in Sources */,
+				D26992D22B7D5AAE004F3FFC /* GeocodingClient.swift in Sources */,
 				D26A00722B7BB40D00AAF9E4 /* Location.swift in Sources */,
 				D26A00462B7BAF8E00AAF9E4 /* WeatherSearchNewApp.swift in Sources */,
 				D26A00782B7BB6B000AAF9E4 /* Environment.swift in Sources */,
+				D26992D62B7D5ACC004F3FFC /* APIEndPoint.swift in Sources */,
+				D26992D82B7D5ACC004F3FFC /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,9 +315,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				D26A00732B7BB40D00AAF9E4 /* Location.swift in Sources */,
+				D26992D32B7D5AAE004F3FFC /* GeocodingClient.swift in Sources */,
 				D26A00792B7BB6B000AAF9E4 /* Environment.swift in Sources */,
 				D26A00762B7BB62A00AAF9E4 /* Weather.swift in Sources */,
+				D26992D92B7D5ACC004F3FFC /* Constants.swift in Sources */,
 				D26A00582B7BAF9B00AAF9E4 /* WeatherSearchNewTests.swift in Sources */,
+				D26992D72B7D5ACC004F3FFC /* APIEndPoint.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

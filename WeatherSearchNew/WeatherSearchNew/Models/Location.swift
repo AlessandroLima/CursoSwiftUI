@@ -15,7 +15,7 @@ struct Location: Decodable, Equatable {
     var state:   String?
     
     
-    static func ==(lhs: Weather, rhs: Weather) -> Bool {
+    static func == (lhs: Location, rhs: Location) -> Bool {
         return lhs.name == rhs.name
         && lhs.lat == rhs.lat
         && lhs.lon == rhs.lon
