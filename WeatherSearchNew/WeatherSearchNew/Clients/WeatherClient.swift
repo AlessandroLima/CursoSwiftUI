@@ -16,15 +16,15 @@ struct WeatherClient {
     }
     
     func fetchWeather(location: Location) async throws -> Weather {
-        let (data, response) = try await session.data(from: APIEndPoint.endPointURL(for: .weatherByLatLong(location.lat ?? 0.0, location.lon ?? 0.0)))
+        let url = APIEndPoint.endPointURL(for: .weatherByLatLong(location.lat ?? 0.0, location.lon ?? 0.0))
+        let (data, response) = try await session.data(from: url)
         
         guard let httpResponse = response as? HTTPURLResponse, httpResponse.statusCode == 200 else {
             throw NetworkError.invalidResponse
         }
         
-        let weather = try JSONDecoder().decode(Weather.self, from: data)
+        let weatherResponse = try JSONDecoder().decode(WeatherResponse.self, from: data)
         
-        return weather
-        
+        return weatherResponse.main
     }
 }

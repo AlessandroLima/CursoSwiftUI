@@ -13,17 +13,20 @@ struct ContentView: View {
             Button("Get Coordinates") {
                 Task {
                     let client = GeocodingClient()
-                    let location = try await client.coordinateByCity("osasco")
-                    print(location)
+                    let weather = WeatherClient()
+                    if let location = try await client.coordinateByCity("osasco") {
+                        let weather = try await weather.fetchWeather(location: location)
+                        print(weather)
+                    }
                 }
             }
+            .padding()
         }
-        .padding()
     }
-}
-
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
+    
+    struct ContentView_Previews: PreviewProvider {
+        static var previews: some View {
+            ContentView()
+        }
     }
 }

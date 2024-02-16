@@ -8,7 +8,7 @@
 import Foundation
 
 struct WeatherResponse: Codable, Equatable {
-    var main:       Weather?
+    var main:       Weather
     
     static func ==(lhs: WeatherResponse, rhs: WeatherResponse) -> Bool {
         return lhs.main == rhs.main
@@ -17,7 +17,7 @@ struct WeatherResponse: Codable, Equatable {
 
 
 struct Weather: Codable, Equatable {
-    var temp:       Double?
+    var temp:       Double
     
     
     static func ==(lhs: Weather, rhs: Weather) -> Bool {
