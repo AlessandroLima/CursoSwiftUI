@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Location: Decodable, Equatable {
+struct Location: Codable, Equatable {
     var name:    String?
     var lat:     Float?
     var lon:     Float?
