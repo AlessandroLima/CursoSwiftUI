@@ -11,6 +11,8 @@
 		D214D7362B7F92B400CCFD9D /* WeatherClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = D214D7342B7F92AC00CCFD9D /* WeatherClient.swift */; };
 		D214D7382B7F966200CCFD9D /* WeatherClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D214D7372B7F966200CCFD9D /* WeatherClientTests.swift */; };
 		D214D73A2B7F96A400CCFD9D /* MockURLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = D214D7392B7F96A400CCFD9D /* MockURLSession.swift */; };
+		D214D73C2B7FDCA900CCFD9D /* MeasurementFormarter+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D214D73B2B7FDCA900CCFD9D /* MeasurementFormarter+Extension.swift */; };
+		D214D73D2B7FDCA900CCFD9D /* MeasurementFormarter+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D214D73B2B7FDCA900CCFD9D /* MeasurementFormarter+Extension.swift */; };
 		D25E3F972B7D7A4C0082B3DC /* WeatherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25E3F962B7D7A4C0082B3DC /* WeatherTests.swift */; };
 		D25E3F992B7D7AD60082B3DC /* GeocodingClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25E3F982B7D7AD60082B3DC /* GeocodingClientTests.swift */; };
 		D26992D22B7D5AAE004F3FFC /* GeocodingClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = D26992D12B7D5AAE004F3FFC /* GeocodingClient.swift */; };
@@ -57,6 +59,7 @@
 		D214D7342B7F92AC00CCFD9D /* WeatherClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherClient.swift; sourceTree = "<group>"; };
 		D214D7372B7F966200CCFD9D /* WeatherClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherClientTests.swift; sourceTree = "<group>"; };
 		D214D7392B7F96A400CCFD9D /* MockURLSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockURLSession.swift; sourceTree = "<group>"; };
+		D214D73B2B7FDCA900CCFD9D /* MeasurementFormarter+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MeasurementFormarter+Extension.swift"; sourceTree = "<group>"; };
 		D25E3F962B7D7A4C0082B3DC /* WeatherTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherTests.swift; sourceTree = "<group>"; };
 		D25E3F982B7D7AD60082B3DC /* GeocodingClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeocodingClientTests.swift; sourceTree = "<group>"; };
 		D26992D12B7D5AAE004F3FFC /* GeocodingClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeocodingClient.swift; sourceTree = "<group>"; };
@@ -147,6 +150,7 @@
 				D26A00492B7BAF9A00AAF9E4 /* Assets.xcassets */,
 				D26A004B2B7BAF9A00AAF9E4 /* WeatherSearchNew.entitlements */,
 				D26A004C2B7BAF9A00AAF9E4 /* Preview Content */,
+				D214D73B2B7FDCA900CCFD9D /* MeasurementFormarter+Extension.swift */,
 			);
 			path = WeatherSearchNew;
 			sourceTree = "<group>";
@@ -332,6 +336,7 @@
 				D26A00752B7BB62A00AAF9E4 /* Weather.swift in Sources */,
 				D26A00482B7BAF8E00AAF9E4 /* ContentView.swift in Sources */,
 				D214D7352B7F92AC00CCFD9D /* WeatherClient.swift in Sources */,
+				D214D73C2B7FDCA900CCFD9D /* MeasurementFormarter+Extension.swift in Sources */,
 				D26992D22B7D5AAE004F3FFC /* GeocodingClient.swift in Sources */,
 				D26A00722B7BB40D00AAF9E4 /* Location.swift in Sources */,
 				D26A00462B7BAF8E00AAF9E4 /* WeatherSearchNewApp.swift in Sources */,
@@ -358,6 +363,7 @@
 				D26992D72B7D5ACC004F3FFC /* APIEndPoint.swift in Sources */,
 				D26992F12B7D77F8004F3FFC /* LocationTests.swift in Sources */,
 				D25E3F992B7D7AD60082B3DC /* GeocodingClientTests.swift in Sources */,
+				D214D73D2B7FDCA900CCFD9D /* MeasurementFormarter+Extension.swift in Sources */,
 				D26992EF2B7D767F004F3FFC /* ConstantsTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
