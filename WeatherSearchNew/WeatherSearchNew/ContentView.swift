@@ -10,10 +10,13 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+            Button("Get Coordinates") {
+                Task {
+                    let client = GeocodingClient()
+                    let location = try await client.coordinateByCity("osasco")
+                    print(location)
+                }
+            }
         }
         .padding()
     }

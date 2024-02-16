@@ -11,22 +11,6 @@ import XCTest
 
 class GeocodingClientTests: XCTestCase {
 
-     //Mock URLSession
-     struct MockURLSession: URLSessionProtocol {
-         var dataResult: (Data, URLResponse)?
-         var errorResult: Error?
-
-         func data(from url: URL) async throws -> (Data, URLResponse) {
-             if let error = errorResult {
-                 throw error
-             }
-             guard let dataResult = dataResult else {
-                 fatalError("You must set dataResult for MockURLSession")
-             }
-             return dataResult
-         }
-     }
-    
     private var resultLocation: Location?
     private var receivedError: Error?
     

@@ -9,8 +9,8 @@ import Foundation
 
 struct Location: Codable, Equatable {
     var name:    String?
-    var lat:     Float?
-    var lon:     Float?
+    var lat:     Double?
+    var lon:     Double?
     var country: String?
     var state:   String?
     

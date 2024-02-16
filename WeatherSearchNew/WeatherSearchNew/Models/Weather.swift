@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct WeatherResponse: Decodable, Equatable {
+struct WeatherResponse: Codable, Equatable {
     var main:       Weather?
     
     static func ==(lhs: WeatherResponse, rhs: WeatherResponse) -> Bool {
@@ -16,7 +16,7 @@ struct WeatherResponse: Decodable, Equatable {
 }
 
 
-struct Weather: Decodable, Equatable {
+struct Weather: Codable, Equatable {
     var temp:       Double?
     
     
