@@ -34,8 +34,6 @@
 		D26A00732B7BB40D00AAF9E4 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = D26A00712B7BB40D00AAF9E4 /* Location.swift */; };
 		D26A00752B7BB62A00AAF9E4 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = D26A00742B7BB62A00AAF9E4 /* Weather.swift */; };
 		D26A00762B7BB62A00AAF9E4 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = D26A00742B7BB62A00AAF9E4 /* Weather.swift */; };
-		D26A00782B7BB6B000AAF9E4 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = D26A00772B7BB6B000AAF9E4 /* Environment.swift */; };
-		D26A00792B7BB6B000AAF9E4 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = D26A00772B7BB6B000AAF9E4 /* Environment.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,7 +78,6 @@
 		D26A00632B7BAF9C00AAF9E4 /* WeatherSearchNewUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherSearchNewUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		D26A00712B7BB40D00AAF9E4 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		D26A00742B7BB62A00AAF9E4 /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
-		D26A00772B7BB6B000AAF9E4 /* Environment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,7 +140,6 @@
 				D214D7332B7F928C00CCFD9D /* Clients */,
 				D26992D42B7D5ACC004F3FFC /* APIEndPoint.swift */,
 				D26992D52B7D5ACC004F3FFC /* Constants.swift */,
-				D26A007A2B7BB6C000AAF9E4 /* Environment */,
 				D26A00702B7BB3F000AAF9E4 /* Models */,
 				D26A00452B7BAF8E00AAF9E4 /* WeatherSearchNewApp.swift */,
 				D26A00472B7BAF8E00AAF9E4 /* ContentView.swift */,
@@ -193,14 +189,6 @@
 				D26A00742B7BB62A00AAF9E4 /* Weather.swift */,
 			);
 			path = Models;
-			sourceTree = "<group>";
-		};
-		D26A007A2B7BB6C000AAF9E4 /* Environment */ = {
-			isa = PBXGroup;
-			children = (
-				D26A00772B7BB6B000AAF9E4 /* Environment.swift */,
-			);
-			path = Environment;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -340,7 +328,6 @@
 				D26992D22B7D5AAE004F3FFC /* GeocodingClient.swift in Sources */,
 				D26A00722B7BB40D00AAF9E4 /* Location.swift in Sources */,
 				D26A00462B7BAF8E00AAF9E4 /* WeatherSearchNewApp.swift in Sources */,
-				D26A00782B7BB6B000AAF9E4 /* Environment.swift in Sources */,
 				D26992D62B7D5ACC004F3FFC /* APIEndPoint.swift in Sources */,
 				D26992D82B7D5ACC004F3FFC /* Constants.swift in Sources */,
 			);
@@ -355,7 +342,6 @@
 				D26992ED2B7D70FB004F3FFC /* APIEndPointTests.swift in Sources */,
 				D26992D32B7D5AAE004F3FFC /* GeocodingClient.swift in Sources */,
 				D214D73A2B7F96A400CCFD9D /* MockURLSession.swift in Sources */,
-				D26A00792B7BB6B000AAF9E4 /* Environment.swift in Sources */,
 				D25E3F972B7D7A4C0082B3DC /* WeatherTests.swift in Sources */,
 				D214D7362B7F92B400CCFD9D /* WeatherClient.swift in Sources */,
 				D26A00762B7BB62A00AAF9E4 /* Weather.swift in Sources */,
