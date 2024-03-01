@@ -15,7 +15,7 @@ class ServiceTests: XCTestCase {
         struct MockURLSession: URLSessionProtocol {
             func data(from url: URL) async throws -> (Data, URLResponse) {
                 // Criar dados simulados
-                let ordersData = try! JSONEncoder().encode([Order(id: 1, name: "John", coffeeName: "Latte", total: 3.5, size: "Medium")])
+                let ordersData = try! JSONEncoder().encode([Order(name: "John", coffeeName: "Latte", total: 3.5, size: "Medium")])
                 let response = HTTPURLResponse(url: url, statusCode: 200, httpVersion: nil, headerFields: nil)!
                 return (ordersData, response)
             }
@@ -29,7 +29,6 @@ class ServiceTests: XCTestCase {
             let orders = try await service.getAllOrders()
             XCTAssertNotNil(orders) // Garantir que a lista de pedidos não é nula
             XCTAssertEqual(orders?.count, 1) // Garantir que a lista tenha um único pedido
-            XCTAssertEqual(orders?.first?.id, 1) // Garantir que o pedido retornado tem o ID esperado
         } catch {
             XCTFail("Erro inesperado: \(error)")
         }

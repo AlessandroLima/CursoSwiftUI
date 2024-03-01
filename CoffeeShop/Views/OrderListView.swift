@@ -17,9 +17,32 @@ struct OrderListView: View {
     
     var body: some View {
         List {
-            ForEach(self.orders, id: \.id) { order
+            ForEach(self.orders, id: \.id) { order in
                 HStack {
+                    Image(order.coffeeName)
+                        .resizable()
+                        .frame(width: 100, height: 100)
+                        .cornerRadius(16)
                     
+                    VStack {
+                        Text(order.name)
+                            .font(.title)
+                            .padding([.leading, .bottom], 10)
+                        
+                        HStack {
+                            Text(order.coffeeName)
+                                .padding(EdgeInsets(top: 10, leading: 10, bottom: 10, trailing: 10))
+                                .background(.gray)
+                                .foregroundColor(.white)
+                                .cornerRadius(10)
+                            Text(order.size)
+                                .padding(EdgeInsets(top: 10, leading: 10, bottom: 10, trailing: 10))
+                                .background(.blue)
+                                .foregroundColor(.white)
+                                .cornerRadius(10)
+                            
+                        }
+                    }
                 }
             }
         }
@@ -28,6 +51,6 @@ struct OrderListView: View {
 
 struct OrderListView_Previews: PreviewProvider {
     static var previews: some View {
-        OrderListView(orders: [OrderViewModel(order: Order(id: 1, name: "name1", coffeeName: "coffeeName1", total: 1.0, size: "Medium"))])
+        OrderListView(orders: [OrderViewModel(order: Order(name: "Regular", coffeeName: "Regular", total: 1.0, size: "Medium"))])
     }
 }
