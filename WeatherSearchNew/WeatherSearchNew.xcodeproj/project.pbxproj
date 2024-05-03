@@ -114,6 +114,15 @@
 			path = Clients;
 			sourceTree = "<group>";
 		};
+		D250AE252BB2F0A200D56801 /* Environment */ = {
+			isa = PBXGroup;
+			children = (
+				D26992D52B7D5ACC004F3FFC /* Constants.swift */,
+				D26992D42B7D5ACC004F3FFC /* APIEndPoint.swift */,
+			);
+			path = Environment;
+			sourceTree = "<group>";
+		};
 		D26A00392B7BAF8E00AAF9E4 = {
 			isa = PBXGroup;
 			children = (
@@ -137,9 +146,8 @@
 		D26A00442B7BAF8E00AAF9E4 /* WeatherSearchNew */ = {
 			isa = PBXGroup;
 			children = (
+				D250AE252BB2F0A200D56801 /* Environment */,
 				D214D7332B7F928C00CCFD9D /* Clients */,
-				D26992D42B7D5ACC004F3FFC /* APIEndPoint.swift */,
-				D26992D52B7D5ACC004F3FFC /* Constants.swift */,
 				D26A00702B7BB3F000AAF9E4 /* Models */,
 				D26A00452B7BAF8E00AAF9E4 /* WeatherSearchNewApp.swift */,
 				D26A00472B7BAF8E00AAF9E4 /* ContentView.swift */,

@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "D277FE3B2B81728A00D432E5"
-               BuildableName = "CooffeShop.app"
-               BlueprintName = "CooffeShop"
-               ReferencedContainer = "container:CooffeShop.xcodeproj">
+               BlueprintIdentifier = "D2C209722B826A8D005E759D"
+               BuildableName = "CoffeeShop.app"
+               BlueprintName = "CoffeeShop"
+               ReferencedContainer = "container:CoffeeShop.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -29,6 +29,28 @@
       shouldUseLaunchSchemeArgsEnv = "YES"
       codeCoverageEnabled = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO"
+            parallelizable = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "D2C209832B826A91005E759D"
+               BuildableName = "CoffeeShopTests.xctest"
+               BlueprintName = "CoffeeShopTests"
+               ReferencedContainer = "container:CoffeeShop.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO"
+            parallelizable = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "D2C2098D2B826A91005E759D"
+               BuildableName = "CoffeeShopUITests.xctest"
+               BlueprintName = "CoffeeShopUITests"
+               ReferencedContainer = "container:CoffeeShop.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction
@@ -45,10 +67,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "D277FE3B2B81728A00D432E5"
-            BuildableName = "CooffeShop.app"
-            BlueprintName = "CooffeShop"
-            ReferencedContainer = "container:CooffeShop.xcodeproj">
+            BlueprintIdentifier = "D2C209722B826A8D005E759D"
+            BuildableName = "CoffeeShop.app"
+            BlueprintName = "CoffeeShop"
+            ReferencedContainer = "container:CoffeeShop.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -62,10 +84,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "D277FE3B2B81728A00D432E5"
-            BuildableName = "CooffeShop.app"
-            BlueprintName = "CooffeShop"
-            ReferencedContainer = "container:CooffeShop.xcodeproj">
+            BlueprintIdentifier = "D2C209722B826A8D005E759D"
+            BuildableName = "CoffeeShop.app"
+            BlueprintName = "CoffeeShop"
+            ReferencedContainer = "container:CoffeeShop.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
