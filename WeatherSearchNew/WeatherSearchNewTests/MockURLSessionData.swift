@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct MockURLSession: URLSessionProtocol {
+struct MockURLSessionData: URLSessionProtocolData {
     var dataResult: (Data, URLResponse)?
     var errorResult: Error?
 
