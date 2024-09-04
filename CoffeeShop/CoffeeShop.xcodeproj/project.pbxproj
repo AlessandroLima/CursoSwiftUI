@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		D27609862B92134E006D7755 /* CreateOrderResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D27609852B92134E006D7755 /* CreateOrderResponse.swift */; };
 		D27609872B92134E006D7755 /* CreateOrderResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D27609852B92134E006D7755 /* CreateOrderResponse.swift */; };
-		D29B9DD02B8BE2F6000D00F4 /* MockURLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = D29B9DCF2B8BE2F6000D00F4 /* MockURLSession.swift */; };
+		D29B9DD02B8BE2F6000D00F4 /* MockURLSessionData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D29B9DCF2B8BE2F6000D00F4 /* MockURLSessionData.swift */; };
 		D29B9DD32B8CC978000D00F4 /* OrderListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D29B9DD22B8CC978000D00F4 /* OrderListViewModel.swift */; };
 		D29B9DD42B8CC978000D00F4 /* OrderListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D29B9DD22B8CC978000D00F4 /* OrderListViewModel.swift */; };
 		D29B9DD72B8CE306000D00F4 /* OrderListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D29B9DD62B8CE306000D00F4 /* OrderListView.swift */; };
@@ -54,7 +54,7 @@
 
 /* Begin PBXFileReference section */
 		D27609852B92134E006D7755 /* CreateOrderResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateOrderResponse.swift; sourceTree = "<group>"; };
-		D29B9DCF2B8BE2F6000D00F4 /* MockURLSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MockURLSession.swift; path = ../../WeatherSearchNew/WeatherSearchNewTests/MockURLSession.swift; sourceTree = "<group>"; };
+		D29B9DCF2B8BE2F6000D00F4 /* MockURLSessionData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MockURLSessionData.swift; path = ../../WeatherSearchNew/WeatherSearchNewTests/MockURLSessionData.swift; sourceTree = "<group>"; };
 		D29B9DD22B8CC978000D00F4 /* OrderListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderListViewModel.swift; sourceTree = "<group>"; };
 		D29B9DD62B8CE306000D00F4 /* OrderListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderListView.swift; sourceTree = "<group>"; };
 		D2C209732B826A8D005E759D /* CoffeeShop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoffeeShop.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -166,7 +166,7 @@
 		D2C209872B826A91005E759D /* CoffeeShopTests */ = {
 			isa = PBXGroup;
 			children = (
-				D29B9DCF2B8BE2F6000D00F4 /* MockURLSession.swift */,
+				D29B9DCF2B8BE2F6000D00F4 /* MockURLSessionData.swift */,
 				D2C209AA2B826D71005E759D /* CooffeTests.swift */,
 				D2C209A82B826C2D005E759D /* OrdersTests.swift */,
 				D2C209882B826A91005E759D /* CoffeeShopTests.swift */,
@@ -361,7 +361,7 @@
 				D2C209A72B826B11005E759D /* Coffee.swift in Sources */,
 				D29B9DD42B8CC978000D00F4 /* OrderListViewModel.swift in Sources */,
 				D2C209B82B8791E7005E759D /* ServiceTests.swift in Sources */,
-				D29B9DD02B8BE2F6000D00F4 /* MockURLSession.swift in Sources */,
+				D29B9DD02B8BE2F6000D00F4 /* MockURLSessionData.swift in Sources */,
 				D2C209AF2B8785BF005E759D /* APIEndPoint.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

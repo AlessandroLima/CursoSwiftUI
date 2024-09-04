@@ -46,11 +46,25 @@ enum NetworkError : Error {
     case invalidResponse
 }
 
-protocol URLSessionProtocol {
+protocol URLSessionProtocolData {
     func data(from url: URL) async throws -> (Data, URLResponse)
+}
+
+protocol URLSessionProtocolDataEntry {
     func dataEntry(from url: URL, with order: Order) async throws -> (Data, URLResponse)
 }
-struct URLSessionWrapper: URLSessionProtocol {
+
+
+
+struct URLSessionWrapperData: URLSessionProtocolData {
+    
+    func data(from url: URL) async throws -> (Data, URLResponse) {
+        return try await URLSession.shared.data(from: url)
+    }
+    
+}
+
+struct URLSessionWrapperDataEntry: URLSessionProtocolDataEntry {
     
     func dataEntry(from url: URL, with order: Order) async throws -> (Data, URLResponse){
         var request = URLRequest(url: url)
@@ -64,23 +78,23 @@ struct URLSessionWrapper: URLSessionProtocol {
         return (data, response)
     }
     
-    
-    func data(from url: URL) async throws -> (Data, URLResponse) {
-        return try await URLSession.shared.data(from: url)
-    }
-    
-    
 }
 
+
+
 struct Service {
-    let session: URLSessionProtocol
+    let sessionData: URLSessionProtocolData
+    let sessionDataEntry: URLSessionProtocolDataEntry
     
-    init(session: URLSessionProtocol = URLSessionWrapper()) {
-        self.session = session
+    init(sessionData: URLSessionProtocolData = URLSessionWrapperData(),
+         sessionDataEntry: URLSessionProtocolDataEntry = URLSessionWrapperDataEntry()
+    ) {
+        self.sessionData = sessionData
+        self.sessionDataEntry = sessionDataEntry
     }
     
     func getAllOrders() async throws -> [Order]? {
-        let (data,response) = try await session.data(from: APIEndPoint.endPointURL(for: APIEndPoint.orders))
+        let (data,response) = try await sessionData.data(from: APIEndPoint.endPointURL(for: APIEndPoint.orders))
         
         guard let httpResponse = response as? HTTPURLResponse, httpResponse.statusCode == 200 else {
             throw NetworkError.invalidResponse
@@ -97,7 +111,7 @@ struct Service {
         
         Task {
             do {
-                let (data, response) = try await session.dataEntry(from: url, with: order)
+                let (data, response) = try await sessionDataEntry.dataEntry(from: url, with: order)
                 
                 if let httpResponse = response as? HTTPURLResponse {
                     print("Status Code: \(httpResponse.statusCode)")
