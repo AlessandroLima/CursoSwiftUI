@@ -12,21 +12,24 @@ class OrderListViewModel: ObservableObject {
     @Published var orders = [OrderViewModel]()
     
     init() {
-        Task {
-            await fetchOrders()
-        }
+        fetchOrders()
     }
     
-    private func fetchOrders() async {
+    func fetchOrders() {
         
-        do {
-            let orders = try await Service().getAllOrders()
-            orders.map { orders in
-                self.orders = orders.map(OrderViewModel.init)
+        Task {
+            do {
+                let orders = try await Service().getAllOrders()
+                await MainActor.run{
+                    orders.map { orders in
+                        self.orders = orders.map(OrderViewModel.init)
+                    }
+                }
+                
+            } catch {
+                //handle error
+                print(error)
             }
-        } catch {
-            //handle error
-            print(error)
         }
     }
 }

@@ -120,8 +120,6 @@ struct Service {
                 if let jsonString = String(data: data, encoding: .utf8) {
                     print("Response JSON: \(jsonString)")
                 }
-                
-                
             }
             catch {
                 print("Error: \(error)")

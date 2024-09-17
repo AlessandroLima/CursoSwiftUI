@@ -27,7 +27,7 @@ extension Coffee {
     static func all(factory: CooffeFactory) -> [Coffee] {
         return [
             factory.makeCoffee(name: "Cappuccino", imageURL: "Cappuccino", price: 2.5),
-            factory.makeCoffee(name: "Espresso", imageURL: "Espresso", price: 2.1),
+            factory.makeCoffee(name: "Expresso", imageURL: "Expresso", price: 2.1),
             factory.makeCoffee(name: "Regular", imageURL: "Regular", price: 1.0),
         ]
     }
