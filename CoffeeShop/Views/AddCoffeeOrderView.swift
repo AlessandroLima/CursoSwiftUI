@@ -54,11 +54,6 @@ struct AddCoffeeOrderView: View {
     }
 }
 
-struct CreateOrderView_Previews: PreviewProvider {
-    static var previews: some View {
-        AddCoffeeOrderView(isPresented: .constant(false))
-    }
-}
 
 struct CoffeeCellView: View {
     
@@ -81,3 +76,15 @@ struct CoffeeCellView: View {
         }
     }
 }
+
+struct CreateOrderView_Previews: PreviewProvider {
+    static var previews: some View {
+        Group {
+            AddCoffeeOrderView(isPresented: .constant(false))
+            AddCoffeeOrderView(isPresented: .constant(false)).colorScheme(.dark)
+        }
+        
+        
+    }
+}
+
