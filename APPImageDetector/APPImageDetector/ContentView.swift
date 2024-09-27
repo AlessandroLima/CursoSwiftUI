@@ -10,6 +10,8 @@ import SwiftUI
 struct ContentView: View {
     
     let images = ["cat1","dog","tree","mountains"]
+    @State var imageName = ""
+    //let screenWidth = UIScreen.main.bounds.width
     
     var body: some View {
        
@@ -20,17 +22,19 @@ struct ContentView: View {
                         ForEach(images, id: \.self) {image in
                             VStack {
                                 ImageView(imageName: image)
-                                    .padding()
                                     .onTapGesture {
-                                        print("teste")
+                                        imageName = image
                                     }
+                                    .padding(.horizontal)
                             }
                         }
                     }
                 }
+                
                 VStack{
-                    Text("resultado")
+                    Text(imageName)
                         .font(.custom("Arial", size: 30))
+                        .frame(height: 30)
                 }
             }.navigationBarTitle("Core ML")
                 .frame(maxWidth: .infinity, maxHeight: .infinity)
@@ -41,18 +45,20 @@ struct ContentView: View {
 
 struct ImageView: View {
     var imageName: String
+    
+    
     var body: some View {
         Image(imageName)
             .resizable()
             .frame(width: 300, height: 300)
             .cornerRadius(150)
     }
+    
 }
 
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        
         ContentView()
         ImageView(imageName: "cat1")
     }
