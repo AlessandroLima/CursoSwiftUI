@@ -12,27 +12,31 @@ struct ContentView: View {
     let images = ["cat1","dog","tree","mountains"]
     
     var body: some View {
-        //VStack{
-        //  Text("oi")
-        //}
-        
+       
         NavigationStack {
             VStack {
                 ScrollView(.horizontal, showsIndicators: false) {
                     HStack {
                         ForEach(images, id: \.self) {image in
-                            ImageView(imageName: image)
-                                .padding()
+                            VStack {
+                                ImageView(imageName: image)
+                                    .padding()
+                                    .onTapGesture {
+                                        print("teste")
+                                    }
+                            }
                         }
                     }
+                }
+                VStack{
+                    Text("resultado")
+                        .font(.custom("Arial", size: 30))
                 }
             }.navigationBarTitle("Core ML")
                 .frame(maxWidth: .infinity, maxHeight: .infinity)
                 .background(Gradient(colors: [.teal, .cyan, .green]).opacity(0.6))
         }.navigationTitle("CoreML")
-        
-        
-    }
+     }
 }
 
 struct ImageView: View {
