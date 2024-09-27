@@ -8,14 +8,15 @@
 import CoreData
 
 struct PersistenceController {
+    
     static let shared = PersistenceController()
 
     static var preview: PersistenceController = {
         let result = PersistenceController(inMemory: true)
         let viewContext = result.container.viewContext
-        for _ in 0..<10 {
-            let newItem = Item(context: viewContext)
-            newItem.timestamp = Date()
+        for _ in 0..<3 {
+            let newItem = Order(context: viewContext)
+            newItem.name = "Alessandro"
         }
         do {
             try viewContext.save()
