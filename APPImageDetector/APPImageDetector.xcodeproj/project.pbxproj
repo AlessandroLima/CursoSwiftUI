@@ -7,8 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D28B65912CA7670400E7A996 /* DetectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D28B65902CA7670400E7A996 /* DetectionViewModel.swift */; };
+		D28B65932CA76A8500E7A996 /* Resnet50.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = D28B65922CA76A8500E7A996 /* Resnet50.mlmodel */; };
+		D28B65952CA7728000E7A996 /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D28B65942CA7728000E7A996 /* UIImage+Extension.swift */; };
 		D2AA68752CA71849001D7E7D /* APPImageDetectorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2AA68742CA71849001D7E7D /* APPImageDetectorApp.swift */; };
-		D2AA68772CA71849001D7E7D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2AA68762CA71849001D7E7D /* ContentView.swift */; };
+		D2AA68772CA71849001D7E7D /* Detection.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2AA68762CA71849001D7E7D /* Detection.swift */; };
 		D2AA68792CA7184B001D7E7D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2AA68782CA7184B001D7E7D /* Assets.xcassets */; };
 		D2AA687C2CA7184B001D7E7D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2AA687B2CA7184B001D7E7D /* Preview Assets.xcassets */; };
 		D2AA68862CA7184C001D7E7D /* APPImageDetectorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2AA68852CA7184C001D7E7D /* APPImageDetectorTests.swift */; };
@@ -34,9 +37,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D28B65902CA7670400E7A996 /* DetectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetectionViewModel.swift; sourceTree = "<group>"; };
+		D28B65922CA76A8500E7A996 /* Resnet50.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Resnet50.mlmodel; sourceTree = "<group>"; };
+		D28B65942CA7728000E7A996 /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
 		D2AA68712CA71849001D7E7D /* APPImageDetector.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = APPImageDetector.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2AA68742CA71849001D7E7D /* APPImageDetectorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APPImageDetectorApp.swift; sourceTree = "<group>"; };
-		D2AA68762CA71849001D7E7D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		D2AA68762CA71849001D7E7D /* Detection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Detection.swift; sourceTree = "<group>"; };
 		D2AA68782CA7184B001D7E7D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D2AA687B2CA7184B001D7E7D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D2AA68812CA7184C001D7E7D /* APPImageDetectorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = APPImageDetectorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -95,9 +101,12 @@
 			isa = PBXGroup;
 			children = (
 				D2AA68742CA71849001D7E7D /* APPImageDetectorApp.swift */,
-				D2AA68762CA71849001D7E7D /* ContentView.swift */,
+				D2AA68762CA71849001D7E7D /* Detection.swift */,
+				D28B65902CA7670400E7A996 /* DetectionViewModel.swift */,
+				D28B65922CA76A8500E7A996 /* Resnet50.mlmodel */,
 				D2AA68782CA7184B001D7E7D /* Assets.xcassets */,
 				D2AA687A2CA7184B001D7E7D /* Preview Content */,
+				D28B65942CA7728000E7A996 /* UIImage+Extension.swift */,
 			);
 			path = APPImageDetector;
 			sourceTree = "<group>";
@@ -257,7 +266,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D2AA68772CA71849001D7E7D /* ContentView.swift in Sources */,
+				D28B65912CA7670400E7A996 /* DetectionViewModel.swift in Sources */,
+				D2AA68772CA71849001D7E7D /* Detection.swift in Sources */,
+				D28B65952CA7728000E7A996 /* UIImage+Extension.swift in Sources */,
+				D28B65932CA76A8500E7A996 /* Resnet50.mlmodel in Sources */,
 				D2AA68752CA71849001D7E7D /* APPImageDetectorApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -11,7 +11,7 @@ import SwiftUI
 struct APPImageDetectorApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            Detection(manager: DetectionManager())
         }
     }
 }
