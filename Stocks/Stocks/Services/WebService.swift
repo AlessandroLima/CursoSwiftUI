@@ -8,12 +8,13 @@
 import Foundation
 
 class WebService {
-    func getStocks(completion: @escaping ( [Stock]?) -> Void)  {
+    
+    func getStocks(completion: @escaping (([Stock]?) -> Void)) {
         guard let url = URL(string: "https://island-bramble.glitch.me/stocks") else {
             fatalError("Url is not correct")
         }
         URLSession.shared.dataTask(with: url) {data, response, error in
-            guard let data = data, error != nil else {
+            guard let data = data, error == nil else {
                 completion(nil)
                 return
             }
@@ -21,30 +22,30 @@ class WebService {
             stocks != nil ? completion(stocks) : completion(nil)
         }.resume()
     }
-    
+        
     func getNews(completion: @escaping ( [New]?) -> Void)  {
-        guard let url = URL(string: "https://island-bramble.glitch.me/stocks") else {
+        guard let url = URL(string: "https://island-bramble.glitch.me/top-news") else {
             fatalError("Url is not correct")
         }
         URLSession.shared.dataTask(with: url) {data, response, error in
-            guard let data = data, error != nil else {
+            guard let data = data, error == nil else {
                 completion(nil)
                 return
             }
-            let stocks = try? JSONDecoder().decode([New].self, from: data)
-            stocks != nil ? completion(stocks) : completion(nil)
+            let news = try? JSONDecoder().decode([New].self, from: data)
+            news != nil ? completion(news) : completion(nil)
         }.resume()
     }
 }
 
-struct Stock: Codable {
+struct Stock: Decodable {
     var symbol: String
     var description: String
     var price: Double
     var change: String
 }
 
-struct New: Codable {
+struct New: Decodable {
     var title: String
     var publication: String
     var imageURL: String

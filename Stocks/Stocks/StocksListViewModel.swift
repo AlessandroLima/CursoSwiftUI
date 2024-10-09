@@ -7,20 +7,27 @@
 
 import Foundation
 
-class StocksListViewModel: ObservableObject {
-    var searchTerm: String = ""
-    @Published  var stocks: [StockViewModel] = [StockViewModel]()
+class StockListViewModel: ObservableObject {
+    
+    @Published var dragOffset: CGSize = CGSize(width: 0, height: 650)
+    @Published var searchTerm: String = ""
+    @Published var stocks: [StockViewModel] = [StockViewModel]()
+    @Published var news: [NewViewModel] = [NewViewModel]()
+    
     var webService: WebService
     
-    init(webService: WebService) {
+    init(webService: WebService = WebService()) {
         self.webService = webService
+        load()
     }
     
-    func load(){
+    func load() {
         fetchStocks()
+        fetchNews()
     }
     
     private func fetchStocks() {
+        
         webService.getStocks { stocks in
             if let stocks = stocks {
                 DispatchQueue.main.async {
@@ -29,4 +36,17 @@ class StocksListViewModel: ObservableObject {
             }
         }
     }
+    
+    private func fetchNews() {
+        
+        webService.getNews { news in
+            if let news = news {
+                DispatchQueue.main.async {
+                    self.news = news.map(NewViewModel.init)
+                }
+            }
+        }
+        
+    }
+    
 }

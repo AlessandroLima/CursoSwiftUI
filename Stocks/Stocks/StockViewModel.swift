@@ -24,3 +24,5 @@ struct StockViewModel {
         return stock.change
     }
 }
+
+
