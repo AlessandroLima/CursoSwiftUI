@@ -4,6 +4,7 @@ struct Main: View {
 
     @ObservedObject private var stockListVM = StockListViewModel()
     
+    
     init() {
         UINavigationBar.appearance().backgroundColor = UIColor.black
         UINavigationBar.appearance().largeTitleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
@@ -11,6 +12,18 @@ struct Main: View {
         UITableViewCell.appearance().backgroundColor = UIColor.black
         
         stockListVM.load()
+        
+        var apt: Apartament? = Apartament(number: 101)
+        var tenant: Tenant? = Tenant(name: "John")
+
+        apt?.tenant = tenant
+        tenant?.apartment = apt
+
+        apt = nil
+        tenant = nil
+
+        
+        
     }
     
     var body: some View {
