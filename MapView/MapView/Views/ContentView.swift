@@ -44,13 +44,9 @@ extension ContentView {
     
     private func calculateOffset() -> CGFloat {
         
-        if landmarks.count > 0 && !self.tapped {
-            return UIScreen.main.bounds.size.height - UIScreen.main.bounds.size.height / 4
-        } else if self.tapped {
-            return 100
-        } else {
-            return UIScreen.main.bounds.size.height
-        }
+        let height = UIScreen.main.bounds.size.height
+        
+        return tapped ? 100 : (landmarks.isEmpty ? height : height - height/4 )
     }
     
     private func getNeardByLandmarks() {

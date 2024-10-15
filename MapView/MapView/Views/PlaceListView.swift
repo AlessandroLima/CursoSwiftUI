@@ -29,7 +29,7 @@ struct PlaceListView: View {
                 .gesture(TapGesture().onEnded(self.onTap))
             
             List(landmarks, id: \.id) { landmarmk in
-                /*@START_MENU_TOKEN@*/Text(landmarmk.name)/*@END_MENU_TOKEN@*/
+                Text(landmarmk.name)
             }.listStyle(.plain)
             
         }.cornerRadius(20)
