@@ -13,6 +13,7 @@ struct ContentView: View {
     @ObservedObject private var locationManager: LocationManager
     @State var search: String = ""
     @State var landmarks = [Landmark]()
+    @State var tapped: Bool = false
     
     init(locationManager: LocationManager = LocationManager()) {
         self.locationManager = locationManager
@@ -21,16 +22,37 @@ struct ContentView: View {
     var body: some View {
         ZStack(alignment: .top) {
             MapView(landmarks: self.landmarks)
+            
             TextField("Search", text: $search, onEditingChanged: { _ in }){
                 getNeardByLandmarks()
             }.textFieldStyle(.roundedBorder)
                 .padding()
                 .offset(y: 44)
+            
+            PlaceListView(landmarks: self.landmarks) {
+                self.tapped.toggle()
+            }
+            .animation(.spring())
+            .offset(y: calculateOffset())
+            
+            
         }
     }
 }
 
 extension ContentView {
+    
+    private func calculateOffset() -> CGFloat {
+        
+        if landmarks.count > 0 && !self.tapped {
+            return UIScreen.main.bounds.size.height - UIScreen.main.bounds.size.height / 4
+        } else if self.tapped {
+            return 100
+        } else {
+            return UIScreen.main.bounds.size.height
+        }
+    }
+    
     private func getNeardByLandmarks() {
         guard let location = locationManager.location else { return }
         

@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		D20CEEE52CBEA300003C5C61 /* Landmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20CEEE42CBEA300003C5C61 /* Landmark.swift */; };
 		D20CEEE72CBEA4B3003C5C61 /* LandmarkAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20CEEE62CBEA4B3003C5C61 /* LandmarkAnnotation.swift */; };
+		D20CEEEB2CBED157003C5C61 /* PlaceListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20CEEEA2CBED157003C5C61 /* PlaceListView.swift */; };
 		D294A00D2CBD582C00DF818A /* MapViewApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D294A00C2CBD582C00DF818A /* MapViewApp.swift */; };
 		D294A00F2CBD582C00DF818A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D294A00E2CBD582C00DF818A /* ContentView.swift */; };
 		D294A0112CBD582F00DF818A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D294A0102CBD582F00DF818A /* Assets.xcassets */; };
@@ -22,6 +23,7 @@
 		D20CEEE22CBD8833003C5C61 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		D20CEEE42CBEA300003C5C61 /* Landmark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Landmark.swift; sourceTree = "<group>"; };
 		D20CEEE62CBEA4B3003C5C61 /* LandmarkAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkAnnotation.swift; sourceTree = "<group>"; };
+		D20CEEEA2CBED157003C5C61 /* PlaceListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceListView.swift; sourceTree = "<group>"; };
 		D294A0092CBD582C00DF818A /* MapView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MapView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D294A00C2CBD582C00DF818A /* MapViewApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewApp.swift; sourceTree = "<group>"; };
 		D294A00E2CBD582C00DF818A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -96,6 +98,7 @@
 			children = (
 				D294A01B2CBD598700DF818A /* MapView.swift */,
 				D294A00E2CBD582C00DF818A /* ContentView.swift */,
+				D20CEEEA2CBED157003C5C61 /* PlaceListView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -188,6 +191,7 @@
 			files = (
 				D294A01F2CBD5D7000DF818A /* Coordinator.swift in Sources */,
 				D294A00F2CBD582C00DF818A /* ContentView.swift in Sources */,
+				D20CEEEB2CBED157003C5C61 /* PlaceListView.swift in Sources */,
 				D20CEEE72CBEA4B3003C5C61 /* LandmarkAnnotation.swift in Sources */,
 				D294A0222CBD62D200DF818A /* LocationManager.swift in Sources */,
 				D294A01C2CBD598700DF818A /* MapView.swift in Sources */,
@@ -326,7 +330,8 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MapView/Info.plist;
 				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "O aplicativo necessita da sua permissão!";
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "Este aplicativo necessita da sua permissão!";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Este aplicativo necessita da sua permissão!";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -357,7 +362,8 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MapView/Info.plist;
 				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "O aplicativo necessita da sua permissão!";
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "Este aplicativo necessita da sua permissão!";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Este aplicativo necessita da sua permissão!";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
