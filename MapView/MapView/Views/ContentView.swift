@@ -12,6 +12,7 @@ struct ContentView: View {
     
     @ObservedObject private var locationManager: LocationManager
     @State var search: String = ""
+    @State var landmarks = [Landmark]()
     
     init(locationManager: LocationManager = LocationManager()) {
         self.locationManager = locationManager
@@ -19,7 +20,7 @@ struct ContentView: View {
     
     var body: some View {
         ZStack(alignment: .top) {
-            MapView()
+            MapView(landmarks: self.landmarks)
             TextField("Search", text: $search, onEditingChanged: { _ in }){
                 getNeardByLandmarks()
             }.textFieldStyle(.roundedBorder)
@@ -38,10 +39,13 @@ extension ContentView {
         request.region = MKCoordinateRegion(center: location.coordinate, latitudinalMeters: 1000, longitudinalMeters: 1000)
         let search = MKLocalSearch(request: request)
         search.start { response, error in
+            
             guard let response = response, error == nil else { return }
+            
             let mapItems = response.mapItems
-            mapItems.map { item in
-                
+            
+            self.landmarks =  mapItems.map {
+                Landmark(placemark: $0.placemark)
             }
         }
     }
