@@ -7,37 +7,40 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D20CEEE52CBEA300003C5C61 /* Landmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20CEEE42CBEA300003C5C61 /* Landmark.swift */; };
-		D20CEEE72CBEA4B3003C5C61 /* LandmarkAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20CEEE62CBEA4B3003C5C61 /* LandmarkAnnotation.swift */; };
-		D20CEEEB2CBED157003C5C61 /* PlaceListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20CEEEA2CBED157003C5C61 /* PlaceListView.swift */; };
-		D23A72212CBF2DAA0034858B /* Neumorphing.swift in Sources */ = {isa = PBXBuildFile; fileRef = D23A72202CBF2DAA0034858B /* Neumorphing.swift */; };
-		D294A00D2CBD582C00DF818A /* MapViewApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D294A00C2CBD582C00DF818A /* MapViewApp.swift */; };
-		D294A00F2CBD582C00DF818A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D294A00E2CBD582C00DF818A /* ContentView.swift */; };
-		D294A0112CBD582F00DF818A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D294A0102CBD582F00DF818A /* Assets.xcassets */; };
-		D294A0142CBD582F00DF818A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D294A0132CBD582F00DF818A /* Preview Assets.xcassets */; };
-		D294A01C2CBD598700DF818A /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D294A01B2CBD598700DF818A /* MapView.swift */; };
-		D294A01F2CBD5D7000DF818A /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D294A01E2CBD5D7000DF818A /* Coordinator.swift */; };
-		D294A0222CBD62D200DF818A /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D294A0212CBD62D200DF818A /* LocationManager.swift */; };
+		D24C55442CBFCEAB0044D06D /* MusicPlayerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24C55432CBFCEAB0044D06D /* MusicPlayerApp.swift */; };
+		D24C55462CBFCEAB0044D06D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24C55452CBFCEAB0044D06D /* ContentView.swift */; };
+		D24C55482CBFCEAD0044D06D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D24C55472CBFCEAD0044D06D /* Assets.xcassets */; };
+		D24C554B2CBFCEAD0044D06D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D24C554A2CBFCEAD0044D06D /* Preview Assets.xcassets */; };
+		D24C55532CBFCEFA0044D06D /* NeumorphicPressButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24C55522CBFCEFA0044D06D /* NeumorphicPressButtonStyle.swift */; };
+		D24C55562CBFCFB00044D06D /* NeumorphicButtonWithLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24C55552CBFCFB00044D06D /* NeumorphicButtonWithLabelView.swift */; };
+		D24C55582CBFD8370044D06D /* NeumorphicButtonWithSystemImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24C55572CBFD8370044D06D /* NeumorphicButtonWithSystemImageView.swift */; };
+		D24C555B2CBFDB250044D06D /* ColorTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24C555A2CBFDB250044D06D /* ColorTheme.swift */; };
+		D24C555D2CBFE33E0044D06D /* NeumorphicImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24C555C2CBFE33D0044D06D /* NeumorphicImageView.swift */; };
+		D24C555F2CBFE4DD0044D06D /* art.png in Resources */ = {isa = PBXBuildFile; fileRef = D24C555E2CBFE4DC0044D06D /* art.png */; };
+		D24C55612CBFEB5A0044D06D /* PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24C55602CBFEB5A0044D06D /* PlayerView.swift */; };
+		D24C55632CBFF8700044D06D /* ButtonTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24C55622CBFF8700044D06D /* ButtonTheme.swift */; };
+		D24C55652CBFF98E0044D06D /* TitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24C55642CBFF98E0044D06D /* TitleView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		D20CEEE22CBD8833003C5C61 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		D20CEEE42CBEA300003C5C61 /* Landmark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Landmark.swift; sourceTree = "<group>"; };
-		D20CEEE62CBEA4B3003C5C61 /* LandmarkAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkAnnotation.swift; sourceTree = "<group>"; };
-		D20CEEEA2CBED157003C5C61 /* PlaceListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceListView.swift; sourceTree = "<group>"; };
-		D23A72202CBF2DAA0034858B /* Neumorphing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Neumorphing.swift; sourceTree = "<group>"; };
-		D294A0092CBD582C00DF818A /* MapView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MapView.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		D294A00C2CBD582C00DF818A /* MapViewApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewApp.swift; sourceTree = "<group>"; };
-		D294A00E2CBD582C00DF818A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		D294A0102CBD582F00DF818A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		D294A0132CBD582F00DF818A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		D294A01B2CBD598700DF818A /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
-		D294A01E2CBD5D7000DF818A /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
-		D294A0212CBD62D200DF818A /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		D24C55402CBFCEAB0044D06D /* MusicPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MusicPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D24C55432CBFCEAB0044D06D /* MusicPlayerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicPlayerApp.swift; sourceTree = "<group>"; };
+		D24C55452CBFCEAB0044D06D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		D24C55472CBFCEAD0044D06D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D24C554A2CBFCEAD0044D06D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D24C55522CBFCEFA0044D06D /* NeumorphicPressButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeumorphicPressButtonStyle.swift; sourceTree = "<group>"; };
+		D24C55552CBFCFB00044D06D /* NeumorphicButtonWithLabelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeumorphicButtonWithLabelView.swift; sourceTree = "<group>"; };
+		D24C55572CBFD8370044D06D /* NeumorphicButtonWithSystemImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeumorphicButtonWithSystemImageView.swift; sourceTree = "<group>"; };
+		D24C555A2CBFDB250044D06D /* ColorTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorTheme.swift; sourceTree = "<group>"; };
+		D24C555C2CBFE33D0044D06D /* NeumorphicImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeumorphicImageView.swift; sourceTree = "<group>"; };
+		D24C555E2CBFE4DC0044D06D /* art.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = art.png; sourceTree = "<group>"; };
+		D24C55602CBFEB5A0044D06D /* PlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerView.swift; sourceTree = "<group>"; };
+		D24C55622CBFF8700044D06D /* ButtonTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonTheme.swift; sourceTree = "<group>"; };
+		D24C55642CBFF98E0044D06D /* TitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		D294A0062CBD582C00DF818A /* Frameworks */ = {
+		D24C553D2CBFCEAB0044D06D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -47,117 +50,110 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		D20CEEE32CBEA2B9003C5C61 /* Models */ = {
+		D24C55372CBFCEAA0044D06D = {
 			isa = PBXGroup;
 			children = (
-				D20CEEE42CBEA300003C5C61 /* Landmark.swift */,
-				D20CEEE62CBEA4B3003C5C61 /* LandmarkAnnotation.swift */,
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		D294A0002CBD582C00DF818A = {
-			isa = PBXGroup;
-			children = (
-				D294A00B2CBD582C00DF818A /* MapView */,
-				D294A00A2CBD582C00DF818A /* Products */,
+				D24C55422CBFCEAB0044D06D /* MusicPlayer */,
+				D24C55412CBFCEAB0044D06D /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		D294A00A2CBD582C00DF818A /* Products */ = {
+		D24C55412CBFCEAB0044D06D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D294A0092CBD582C00DF818A /* MapView.app */,
+				D24C55402CBFCEAB0044D06D /* MusicPlayer.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		D294A00B2CBD582C00DF818A /* MapView */ = {
+		D24C55422CBFCEAB0044D06D /* MusicPlayer */ = {
 			isa = PBXGroup;
 			children = (
-				D20CEEE32CBEA2B9003C5C61 /* Models */,
-				D20CEEE22CBD8833003C5C61 /* Info.plist */,
-				D294A0202CBD62BA00DF818A /* Managers */,
-				D294A01D2CBD5D4000DF818A /* Coordinators */,
-				D294A01A2CBD595D00DF818A /* Views */,
-				D294A00C2CBD582C00DF818A /* MapViewApp.swift */,
-				D294A0102CBD582F00DF818A /* Assets.xcassets */,
-				D294A0122CBD582F00DF818A /* Preview Content */,
+				D24C555E2CBFE4DC0044D06D /* art.png */,
+				D24C55592CBFDAFA0044D06D /* Themes */,
+				D24C55542CBFCF390044D06D /* Views */,
+				D24C55512CBFCEE70044D06D /* Styles */,
+				D24C55432CBFCEAB0044D06D /* MusicPlayerApp.swift */,
+				D24C55452CBFCEAB0044D06D /* ContentView.swift */,
+				D24C55472CBFCEAD0044D06D /* Assets.xcassets */,
+				D24C55492CBFCEAD0044D06D /* Preview Content */,
 			);
-			path = MapView;
+			path = MusicPlayer;
 			sourceTree = "<group>";
 		};
-		D294A0122CBD582F00DF818A /* Preview Content */ = {
+		D24C55492CBFCEAD0044D06D /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				D294A0132CBD582F00DF818A /* Preview Assets.xcassets */,
+				D24C554A2CBFCEAD0044D06D /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		D294A01A2CBD595D00DF818A /* Views */ = {
+		D24C55512CBFCEE70044D06D /* Styles */ = {
 			isa = PBXGroup;
 			children = (
-				D294A01B2CBD598700DF818A /* MapView.swift */,
-				D294A00E2CBD582C00DF818A /* ContentView.swift */,
-				D20CEEEA2CBED157003C5C61 /* PlaceListView.swift */,
-				D23A72202CBF2DAA0034858B /* Neumorphing.swift */,
+				D24C55522CBFCEFA0044D06D /* NeumorphicPressButtonStyle.swift */,
+			);
+			path = Styles;
+			sourceTree = "<group>";
+		};
+		D24C55542CBFCF390044D06D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D24C55552CBFCFB00044D06D /* NeumorphicButtonWithLabelView.swift */,
+				D24C55572CBFD8370044D06D /* NeumorphicButtonWithSystemImageView.swift */,
+				D24C555C2CBFE33D0044D06D /* NeumorphicImageView.swift */,
+				D24C55642CBFF98E0044D06D /* TitleView.swift */,
+				D24C55602CBFEB5A0044D06D /* PlayerView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
 		};
-		D294A01D2CBD5D4000DF818A /* Coordinators */ = {
+		D24C55592CBFDAFA0044D06D /* Themes */ = {
 			isa = PBXGroup;
 			children = (
-				D294A01E2CBD5D7000DF818A /* Coordinator.swift */,
+				D24C555A2CBFDB250044D06D /* ColorTheme.swift */,
+				D24C55622CBFF8700044D06D /* ButtonTheme.swift */,
 			);
-			path = Coordinators;
-			sourceTree = "<group>";
-		};
-		D294A0202CBD62BA00DF818A /* Managers */ = {
-			isa = PBXGroup;
-			children = (
-				D294A0212CBD62D200DF818A /* LocationManager.swift */,
-			);
-			path = Managers;
+			path = Themes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		D294A0082CBD582C00DF818A /* MapView */ = {
+		D24C553F2CBFCEAB0044D06D /* MusicPlayer */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D294A0172CBD582F00DF818A /* Build configuration list for PBXNativeTarget "MapView" */;
+			buildConfigurationList = D24C554E2CBFCEAD0044D06D /* Build configuration list for PBXNativeTarget "MusicPlayer" */;
 			buildPhases = (
-				D294A0052CBD582C00DF818A /* Sources */,
-				D294A0062CBD582C00DF818A /* Frameworks */,
-				D294A0072CBD582C00DF818A /* Resources */,
+				D24C553C2CBFCEAB0044D06D /* Sources */,
+				D24C553D2CBFCEAB0044D06D /* Frameworks */,
+				D24C553E2CBFCEAB0044D06D /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = MapView;
-			productName = MapView;
-			productReference = D294A0092CBD582C00DF818A /* MapView.app */;
+			name = MusicPlayer;
+			productName = MusicPlayer;
+			productReference = D24C55402CBFCEAB0044D06D /* MusicPlayer.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		D294A0012CBD582C00DF818A /* Project object */ = {
+		D24C55382CBFCEAA0044D06D /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1420;
 				LastUpgradeCheck = 1420;
 				TargetAttributes = {
-					D294A0082CBD582C00DF818A = {
+					D24C553F2CBFCEAB0044D06D = {
 						CreatedOnToolsVersion = 14.2;
 					};
 				};
 			};
-			buildConfigurationList = D294A0042CBD582C00DF818A /* Build configuration list for PBXProject "MapView" */;
+			buildConfigurationList = D24C553B2CBFCEAA0044D06D /* Build configuration list for PBXProject "MusicPlayer" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -165,49 +161,51 @@
 				en,
 				Base,
 			);
-			mainGroup = D294A0002CBD582C00DF818A;
-			productRefGroup = D294A00A2CBD582C00DF818A /* Products */;
+			mainGroup = D24C55372CBFCEAA0044D06D;
+			productRefGroup = D24C55412CBFCEAB0044D06D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D294A0082CBD582C00DF818A /* MapView */,
+				D24C553F2CBFCEAB0044D06D /* MusicPlayer */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		D294A0072CBD582C00DF818A /* Resources */ = {
+		D24C553E2CBFCEAB0044D06D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D294A0142CBD582F00DF818A /* Preview Assets.xcassets in Resources */,
-				D294A0112CBD582F00DF818A /* Assets.xcassets in Resources */,
+				D24C555F2CBFE4DD0044D06D /* art.png in Resources */,
+				D24C554B2CBFCEAD0044D06D /* Preview Assets.xcassets in Resources */,
+				D24C55482CBFCEAD0044D06D /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		D294A0052CBD582C00DF818A /* Sources */ = {
+		D24C553C2CBFCEAB0044D06D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D294A01F2CBD5D7000DF818A /* Coordinator.swift in Sources */,
-				D294A00F2CBD582C00DF818A /* ContentView.swift in Sources */,
-				D20CEEEB2CBED157003C5C61 /* PlaceListView.swift in Sources */,
-				D20CEEE72CBEA4B3003C5C61 /* LandmarkAnnotation.swift in Sources */,
-				D23A72212CBF2DAA0034858B /* Neumorphing.swift in Sources */,
-				D294A0222CBD62D200DF818A /* LocationManager.swift in Sources */,
-				D294A01C2CBD598700DF818A /* MapView.swift in Sources */,
-				D294A00D2CBD582C00DF818A /* MapViewApp.swift in Sources */,
-				D20CEEE52CBEA300003C5C61 /* Landmark.swift in Sources */,
+				D24C55582CBFD8370044D06D /* NeumorphicButtonWithSystemImageView.swift in Sources */,
+				D24C55562CBFCFB00044D06D /* NeumorphicButtonWithLabelView.swift in Sources */,
+				D24C55462CBFCEAB0044D06D /* ContentView.swift in Sources */,
+				D24C55612CBFEB5A0044D06D /* PlayerView.swift in Sources */,
+				D24C555B2CBFDB250044D06D /* ColorTheme.swift in Sources */,
+				D24C55632CBFF8700044D06D /* ButtonTheme.swift in Sources */,
+				D24C55532CBFCEFA0044D06D /* NeumorphicPressButtonStyle.swift in Sources */,
+				D24C555D2CBFE33E0044D06D /* NeumorphicImageView.swift in Sources */,
+				D24C55442CBFCEAB0044D06D /* MusicPlayerApp.swift in Sources */,
+				D24C55652CBFF98E0044D06D /* TitleView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		D294A0152CBD582F00DF818A /* Debug */ = {
+		D24C554C2CBFCEAD0044D06D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -267,7 +265,7 @@
 			};
 			name = Debug;
 		};
-		D294A0162CBD582F00DF818A /* Release */ = {
+		D24C554D2CBFCEAD0044D06D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -321,21 +319,18 @@
 			};
 			name = Release;
 		};
-		D294A0182CBD582F00DF818A /* Debug */ = {
+		D24C554F2CBFCEAD0044D06D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"MapView/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"MusicPlayer/Preview Content\"";
 				DEVELOPMENT_TEAM = 6G8JULRZR4;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = MapView/Info.plist;
-				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "O aplicativo necessita da sua permissão!";
-				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "Este aplicativo necessita da sua permissão!";
-				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Este aplicativo necessita da sua permissão!";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -345,7 +340,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = br.com.aletlima.MapView;
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.aletlima.MusicPlayer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -353,21 +348,18 @@
 			};
 			name = Debug;
 		};
-		D294A0192CBD582F00DF818A /* Release */ = {
+		D24C55502CBFCEAD0044D06D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"MapView/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"MusicPlayer/Preview Content\"";
 				DEVELOPMENT_TEAM = 6G8JULRZR4;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = MapView/Info.plist;
-				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "O aplicativo necessita da sua permissão!";
-				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "Este aplicativo necessita da sua permissão!";
-				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Este aplicativo necessita da sua permissão!";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -377,7 +369,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = br.com.aletlima.MapView;
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.aletlima.MusicPlayer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -388,25 +380,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D294A0042CBD582C00DF818A /* Build configuration list for PBXProject "MapView" */ = {
+		D24C553B2CBFCEAA0044D06D /* Build configuration list for PBXProject "MusicPlayer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D294A0152CBD582F00DF818A /* Debug */,
-				D294A0162CBD582F00DF818A /* Release */,
+				D24C554C2CBFCEAD0044D06D /* Debug */,
+				D24C554D2CBFCEAD0044D06D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D294A0172CBD582F00DF818A /* Build configuration list for PBXNativeTarget "MapView" */ = {
+		D24C554E2CBFCEAD0044D06D /* Build configuration list for PBXNativeTarget "MusicPlayer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D294A0182CBD582F00DF818A /* Debug */,
-				D294A0192CBD582F00DF818A /* Release */,
+				D24C554F2CBFCEAD0044D06D /* Debug */,
+				D24C55502CBFCEAD0044D06D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = D294A0012CBD582C00DF818A /* Project object */;
+	rootObject = D24C55382CBFCEAA0044D06D /* Project object */;
 }
