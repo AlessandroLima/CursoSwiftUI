@@ -16,10 +16,11 @@
 		D24C55582CBFD8370044D06D /* NeumorphicButtonWithSystemImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24C55572CBFD8370044D06D /* NeumorphicButtonWithSystemImageView.swift */; };
 		D24C555B2CBFDB250044D06D /* ColorTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24C555A2CBFDB250044D06D /* ColorTheme.swift */; };
 		D24C555D2CBFE33E0044D06D /* NeumorphicImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24C555C2CBFE33D0044D06D /* NeumorphicImageView.swift */; };
-		D24C555F2CBFE4DD0044D06D /* art.png in Resources */ = {isa = PBXBuildFile; fileRef = D24C555E2CBFE4DC0044D06D /* art.png */; };
 		D24C55612CBFEB5A0044D06D /* PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24C55602CBFEB5A0044D06D /* PlayerView.swift */; };
 		D24C55632CBFF8700044D06D /* ButtonTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24C55622CBFF8700044D06D /* ButtonTheme.swift */; };
 		D24C55652CBFF98E0044D06D /* TitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24C55642CBFF98E0044D06D /* TitleView.swift */; };
+		D24C55692CC002FA0044D06D /* CustomSliderStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24C55682CC002FA0044D06D /* CustomSliderStyle.swift */; };
+		D24C556B2CC003400044D06D /* CustomSliderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24C556A2CC003400044D06D /* CustomSliderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,10 +34,11 @@
 		D24C55572CBFD8370044D06D /* NeumorphicButtonWithSystemImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeumorphicButtonWithSystemImageView.swift; sourceTree = "<group>"; };
 		D24C555A2CBFDB250044D06D /* ColorTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorTheme.swift; sourceTree = "<group>"; };
 		D24C555C2CBFE33D0044D06D /* NeumorphicImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeumorphicImageView.swift; sourceTree = "<group>"; };
-		D24C555E2CBFE4DC0044D06D /* art.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = art.png; sourceTree = "<group>"; };
 		D24C55602CBFEB5A0044D06D /* PlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerView.swift; sourceTree = "<group>"; };
 		D24C55622CBFF8700044D06D /* ButtonTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonTheme.swift; sourceTree = "<group>"; };
 		D24C55642CBFF98E0044D06D /* TitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleView.swift; sourceTree = "<group>"; };
+		D24C55682CC002FA0044D06D /* CustomSliderStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSliderStyle.swift; sourceTree = "<group>"; };
+		D24C556A2CC003400044D06D /* CustomSliderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSliderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,7 +71,6 @@
 		D24C55422CBFCEAB0044D06D /* MusicPlayer */ = {
 			isa = PBXGroup;
 			children = (
-				D24C555E2CBFE4DC0044D06D /* art.png */,
 				D24C55592CBFDAFA0044D06D /* Themes */,
 				D24C55542CBFCF390044D06D /* Views */,
 				D24C55512CBFCEE70044D06D /* Styles */,
@@ -93,6 +94,7 @@
 			isa = PBXGroup;
 			children = (
 				D24C55522CBFCEFA0044D06D /* NeumorphicPressButtonStyle.swift */,
+				D24C55682CC002FA0044D06D /* CustomSliderStyle.swift */,
 			);
 			path = Styles;
 			sourceTree = "<group>";
@@ -105,6 +107,7 @@
 				D24C555C2CBFE33D0044D06D /* NeumorphicImageView.swift */,
 				D24C55642CBFF98E0044D06D /* TitleView.swift */,
 				D24C55602CBFEB5A0044D06D /* PlayerView.swift */,
+				D24C556A2CC003400044D06D /* CustomSliderView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -176,7 +179,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D24C555F2CBFE4DD0044D06D /* art.png in Resources */,
 				D24C554B2CBFCEAD0044D06D /* Preview Assets.xcassets in Resources */,
 				D24C55482CBFCEAD0044D06D /* Assets.xcassets in Resources */,
 			);
@@ -191,8 +193,10 @@
 			files = (
 				D24C55582CBFD8370044D06D /* NeumorphicButtonWithSystemImageView.swift in Sources */,
 				D24C55562CBFCFB00044D06D /* NeumorphicButtonWithLabelView.swift in Sources */,
+				D24C556B2CC003400044D06D /* CustomSliderView.swift in Sources */,
 				D24C55462CBFCEAB0044D06D /* ContentView.swift in Sources */,
 				D24C55612CBFEB5A0044D06D /* PlayerView.swift in Sources */,
+				D24C55692CC002FA0044D06D /* CustomSliderStyle.swift in Sources */,
 				D24C555B2CBFDB250044D06D /* ColorTheme.swift in Sources */,
 				D24C55632CBFF8700044D06D /* ButtonTheme.swift in Sources */,
 				D24C55532CBFCEFA0044D06D /* NeumorphicPressButtonStyle.swift in Sources */,
