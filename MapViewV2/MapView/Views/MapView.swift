@@ -12,7 +12,7 @@ import SwiftUI
 
 struct MapView: UIViewRepresentable {
     
-    let landmarks: [Landmark]
+    let landmarks: [LandmarkViewModel]
     
     func makeCoordinator() -> Coordinator {
         Coordinator(self)    
@@ -26,7 +26,7 @@ struct MapView: UIViewRepresentable {
     }
     
     func updateUIView(_ uiView: MKMapView, context: UIViewRepresentableContext<MapView>) {
-        updateAnnotations(from: uiView)
+    updateAnnotations(from: uiView)
     }
     
     private func updateAnnotations(from mapView: MKMapView) {

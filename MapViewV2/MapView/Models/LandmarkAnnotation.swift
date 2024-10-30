@@ -13,7 +13,7 @@ final class LandmarkAnnotation: NSObject, MKAnnotation {
     let coordinate: CLLocationCoordinate2D
     let title: String?
     
-    init(landmark: Landmark) {
+    init(landmark: LandmarkViewModel) {
         self.coordinate = landmark.coordinate
         self.title = landmark.title
     }

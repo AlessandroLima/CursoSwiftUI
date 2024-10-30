@@ -12,7 +12,7 @@ struct ContentView: View {
     
     @ObservedObject private var locationManager: LocationManager
     @State var search: String = ""
-    @State var landmarks = [Landmark]()
+    @State var landmarks = [LandmarkViewModel]()
     @State var tapped: Bool = false
     
     init(locationManager: LocationManager = LocationManager()) {
@@ -54,7 +54,7 @@ extension ContentView {
         
         let request = MKLocalSearch.Request()
         request.naturalLanguageQuery = self.search
-        request.region = MKCoordinateRegion(center: location.coordinate, latitudinalMeters: 1000, longitudinalMeters: 1000)
+        request.region = MKCoordinateRegion(center: location.coordinate, latitudinalMeters: 500, longitudinalMeters: 500)
         let search = MKLocalSearch(request: request)
         search.start { response, error in
             
@@ -63,7 +63,7 @@ extension ContentView {
             let mapItems = response.mapItems
             
             self.landmarks =  mapItems.map {
-                Landmark(placemark: $0.placemark)
+                LandmarkViewModel(placemark: $0.placemark)
             }
         }
     }

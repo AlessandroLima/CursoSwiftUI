@@ -10,7 +10,7 @@ import MapKit
 
 struct PlaceListView: View {
     
-    let landmarks: [Landmark]
+    let landmarks: [LandmarkViewModel]
     var onTap: () -> ()
     
     var body: some View {
@@ -40,6 +40,6 @@ struct PlaceListView: View {
 
 struct PlaceListView_Previews: PreviewProvider {
     static var previews: some View {
-        PlaceListView(landmarks: [Landmark(placemark: MKPlacemark(coordinate: CLLocationCoordinate2D(latitude:  -23.5159868, longitude: -46.7774562)))], onTap: {})
+        PlaceListView(landmarks: [LandmarkViewModel(placemark: MKPlacemark(coordinate: CLLocationCoordinate2D(latitude:  -23.5159868, longitude: -46.7774562)))], onTap: {})
     }
 }

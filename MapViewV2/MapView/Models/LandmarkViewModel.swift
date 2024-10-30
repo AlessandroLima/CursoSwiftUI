@@ -8,7 +8,7 @@
 import Foundation
 import MapKit
 
-struct Landmark: Hashable {
+struct LandmarkViewModel: Hashable, Identifiable {
     let placemark: MKPlacemark
     
     var id: UUID {

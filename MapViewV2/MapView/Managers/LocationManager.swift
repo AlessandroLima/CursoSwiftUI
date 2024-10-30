@@ -13,6 +13,7 @@ class LocationManager: NSObject, ObservableObject {
     private let locationManager = CLLocationManager()
     @Published var location: CLLocation? = nil
     
+    
     override init() {
         super.init()
         self.locationManager.delegate = self
@@ -28,6 +29,11 @@ extension LocationManager: CLLocationManagerDelegate {
         guard let location = locations.last else {
             return
         }
-        self.location = location
+        DispatchQueue.main.async {
+            self.location = location
+        }
+        
     }
+    
+    
 }
