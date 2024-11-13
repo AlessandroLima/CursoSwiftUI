@@ -1,0 +1,360 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D24B6F1D2CE26998009F5F7A /* HomeEstiloPinterestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24B6F1C2CE26998009F5F7A /* HomeEstiloPinterestApp.swift */; };
+		D24B6F1F2CE26998009F5F7A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24B6F1E2CE26998009F5F7A /* ContentView.swift */; };
+		D24B6F212CE2699B009F5F7A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D24B6F202CE2699B009F5F7A /* Assets.xcassets */; };
+		D24B6F242CE2699B009F5F7A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D24B6F232CE2699B009F5F7A /* Preview Assets.xcassets */; };
+		D24B6F2B2CE269C8009F5F7A /* AsyncImageGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24B6F2A2CE269C8009F5F7A /* AsyncImageGridView.swift */; };
+		D24B6F2D2CE2706A009F5F7A /* ListOfImages.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24B6F2C2CE2706A009F5F7A /* ListOfImages.swift */; };
+		D24B6F2F2CE36E2C009F5F7A /* AsyncImageGridViewV2.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24B6F2E2CE36E2C009F5F7A /* AsyncImageGridViewV2.swift */; };
+		D24B6F312CE3788C009F5F7A /* AsyncImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24B6F302CE3788C009F5F7A /* AsyncImageView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		D24B6F192CE26998009F5F7A /* HomeEstiloPinterest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HomeEstiloPinterest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D24B6F1C2CE26998009F5F7A /* HomeEstiloPinterestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeEstiloPinterestApp.swift; sourceTree = "<group>"; };
+		D24B6F1E2CE26998009F5F7A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		D24B6F202CE2699B009F5F7A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D24B6F232CE2699B009F5F7A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D24B6F2A2CE269C8009F5F7A /* AsyncImageGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncImageGridView.swift; sourceTree = "<group>"; };
+		D24B6F2C2CE2706A009F5F7A /* ListOfImages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOfImages.swift; sourceTree = "<group>"; };
+		D24B6F2E2CE36E2C009F5F7A /* AsyncImageGridViewV2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncImageGridViewV2.swift; sourceTree = "<group>"; };
+		D24B6F302CE3788C009F5F7A /* AsyncImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncImageView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D24B6F162CE26998009F5F7A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D24B6F102CE26998009F5F7A = {
+			isa = PBXGroup;
+			children = (
+				D24B6F1B2CE26998009F5F7A /* HomeEstiloPinterest */,
+				D24B6F1A2CE26998009F5F7A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D24B6F1A2CE26998009F5F7A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D24B6F192CE26998009F5F7A /* HomeEstiloPinterest.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D24B6F1B2CE26998009F5F7A /* HomeEstiloPinterest */ = {
+			isa = PBXGroup;
+			children = (
+				D24B6F1C2CE26998009F5F7A /* HomeEstiloPinterestApp.swift */,
+				D24B6F1E2CE26998009F5F7A /* ContentView.swift */,
+				D24B6F2A2CE269C8009F5F7A /* AsyncImageGridView.swift */,
+				D24B6F2E2CE36E2C009F5F7A /* AsyncImageGridViewV2.swift */,
+				D24B6F202CE2699B009F5F7A /* Assets.xcassets */,
+				D24B6F222CE2699B009F5F7A /* Preview Content */,
+				D24B6F2C2CE2706A009F5F7A /* ListOfImages.swift */,
+				D24B6F302CE3788C009F5F7A /* AsyncImageView.swift */,
+			);
+			path = HomeEstiloPinterest;
+			sourceTree = "<group>";
+		};
+		D24B6F222CE2699B009F5F7A /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				D24B6F232CE2699B009F5F7A /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D24B6F182CE26998009F5F7A /* HomeEstiloPinterest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D24B6F272CE2699B009F5F7A /* Build configuration list for PBXNativeTarget "HomeEstiloPinterest" */;
+			buildPhases = (
+				D24B6F152CE26998009F5F7A /* Sources */,
+				D24B6F162CE26998009F5F7A /* Frameworks */,
+				D24B6F172CE26998009F5F7A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HomeEstiloPinterest;
+			productName = HomeEstiloPinterest;
+			productReference = D24B6F192CE26998009F5F7A /* HomeEstiloPinterest.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D24B6F112CE26998009F5F7A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					D24B6F182CE26998009F5F7A = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = D24B6F142CE26998009F5F7A /* Build configuration list for PBXProject "HomeEstiloPinterest" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D24B6F102CE26998009F5F7A;
+			productRefGroup = D24B6F1A2CE26998009F5F7A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D24B6F182CE26998009F5F7A /* HomeEstiloPinterest */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D24B6F172CE26998009F5F7A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D24B6F242CE2699B009F5F7A /* Preview Assets.xcassets in Resources */,
+				D24B6F212CE2699B009F5F7A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D24B6F152CE26998009F5F7A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D24B6F2D2CE2706A009F5F7A /* ListOfImages.swift in Sources */,
+				D24B6F2B2CE269C8009F5F7A /* AsyncImageGridView.swift in Sources */,
+				D24B6F2F2CE36E2C009F5F7A /* AsyncImageGridViewV2.swift in Sources */,
+				D24B6F1F2CE26998009F5F7A /* ContentView.swift in Sources */,
+				D24B6F1D2CE26998009F5F7A /* HomeEstiloPinterestApp.swift in Sources */,
+				D24B6F312CE3788C009F5F7A /* AsyncImageView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		D24B6F252CE2699B009F5F7A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D24B6F262CE2699B009F5F7A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D24B6F282CE2699B009F5F7A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"HomeEstiloPinterest/Preview Content\"";
+				DEVELOPMENT_TEAM = 6G8JULRZR4;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.aletlima.HomeEstiloPinterest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D24B6F292CE2699B009F5F7A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"HomeEstiloPinterest/Preview Content\"";
+				DEVELOPMENT_TEAM = 6G8JULRZR4;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.aletlima.HomeEstiloPinterest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D24B6F142CE26998009F5F7A /* Build configuration list for PBXProject "HomeEstiloPinterest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D24B6F252CE2699B009F5F7A /* Debug */,
+				D24B6F262CE2699B009F5F7A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D24B6F272CE2699B009F5F7A /* Build configuration list for PBXNativeTarget "HomeEstiloPinterest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D24B6F282CE2699B009F5F7A /* Debug */,
+				D24B6F292CE2699B009F5F7A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D24B6F112CE26998009F5F7A /* Project object */;
+}
