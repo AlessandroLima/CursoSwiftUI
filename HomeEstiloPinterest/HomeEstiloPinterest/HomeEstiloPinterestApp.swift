@@ -11,7 +11,7 @@ import SwiftUI
 struct HomeEstiloPinterestApp: App {
     var body: some Scene {
         WindowGroup {
-            AsyncImageGridView()
+            AsyncImageGridViewV2()
         }
     }
 }
