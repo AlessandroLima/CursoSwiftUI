@@ -10,7 +10,6 @@ import SwiftUI
 struct AsyncImageGridViewV2: View {
     
     @State private var images: [String] = ListOfImages.urls // URLs das imagens
-    @State private var isLoading = false
     @State private var imageUrl = ""
     @State private var showDetail: Bool = false
     private let columnCount = 2
@@ -38,12 +37,6 @@ struct AsyncImageGridViewV2: View {
                                     
                                 }
                                 .matchedGeometryEffect(id: "Image\(imageUrl)", in: animation)
-                        }
-                        
-                        if isLoading {
-                            ProgressView()
-                                .frame(maxWidth: .infinity)
-                                .gridCellColumns(columnCount) // Ocupa toda a largura
                         }
                     }.padding()
                 }
